@@ -29,3 +29,18 @@ catkin_make通过后，仿真里看还是没装到UUV上面
 用DAVE自带的april tag, 模型加载进去, 仿真里看是一块白板，无二维码图案
 
 不懂为什么，之前在seabed里面加是正常能看到的
+
+3 GUI FULLSCREEN problem
+
+Found that if include the following content, the gazebo crashed suddenly (gazebo-gui 3 died) but rviz works well.
+
+    <gui fullscreen='0'>
+      <camera name='user_camera'>
+        <pose frame=''>-25 25 -55 0 0 -0.8</pose>
+        <view_controller>orbit</view_controller>
+        <projection_type>perspective</projection_type>
+      </camera>
+    </gui>
+
+Reason:
+Still no idea. Other world file which includes GUI FULLSCREEN wouldn't make gazebo crash.
