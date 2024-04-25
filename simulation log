@@ -26,9 +26,15 @@ catkin_make通过后，仿真里看还是没装到UUV上面
 
 2 在泳池里加二维码
 
-用DAVE自带的april tag, 模型加载进去, 仿真里看是一块白板，无二维码图案
+用DAVE自带的april tag, 模型加载进去(include AprilTag in the swimmingpool.world), 仿真里看是一块白板，无二维码图案
 
 不懂为什么，之前在seabed里面加是正常能看到的
+
+2.1 add it in the model.sdf of pool
+
+april tag is invisible
+
+2.2 download a new marker model
 
 3 GUI FULLSCREEN problem
 
