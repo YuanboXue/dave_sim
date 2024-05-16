@@ -93,3 +93,13 @@ Found that if include the following content, the gazebo crashed suddenly (gazebo
 
 Reason:
 Still no idea. Other world file which includes GUI FULLSCREEN wouldn't make gazebo crash.
+
+0516
+
+求解器失败，UUV缓慢上浮，没有力给到 (start_dobmpc_demo_pool.launch & start_dobmpc_demo.launch 都是)
+
+有些玄学 （曾经这样做但不行，让J总来看，这样做又行了）
+1 dobmpc的scripts文件夹下 python3 generate_c_code.py
+2 catkin_make
+3 source
+然后就可以正常roslaunch start_dobmpc_demo_pool.launch
